@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 export default function DeviceCard({ id, device, sms, expanded, onToggle, isFav, onFavToggle }) {
   const online = device.isOnline || device.online || false;
   const smsList = Object.values(sms || {}).slice(0, 3);
